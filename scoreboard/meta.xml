@@ -1,0 +1,23 @@
+<meta>
+  <min_mta_version server="1.5.6-9.18728" client="1.5.6-9.18728"/>
+  <info author="ROMCIS, Lua Developer" type="script" name="scoreboard"/>
+
+  <script src="g_scoreboard.lua" type="shared" cache="false"/>
+  <script src="c_scoreboard.lua" type="client" cache="false"/>
+  <script src="s_scoreboard.lua" type="server"/>
+	<file src="html/index.html"/>
+	<file src="html/script.js"/>
+
+	<file src="html/css/googlefonts.css"/>
+	<file src="html/css/Iurf6YBj_oCad4k1l4qkHrFpiQ.woff2"/>
+	<file src="html/css/Iurf6YBj_oCad4k1l4qkHrRpiYlJ.woff2"/>
+	<file src="html/css/Iurf6YBj_oCad4k1l8KiHrFpiQ.woff2"/>
+	<file src="html/css/Iurf6YBj_oCad4k1l8KiHrRpiYlJ.woff2"/>
+	<file src="html/css/style.css"/>
+	<file src="html/css/mine.css"/>
+  <file src="html/css/style.min.css"/>
+
+  <file src="html/font/Bold.ttf"/>
+	<file src="html/font/Medium.ttf"/>
+  <file src="html/font/Regular.ttf"/>
+</meta>

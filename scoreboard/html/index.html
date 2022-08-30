@@ -1,0 +1,290 @@
+<html>
+  <head>
+      <meta charset="UTF-8">
+      <meta name="viewport" content="width=device-width, initial-scale=1.0">
+      <link rel="stylesheet" href="css/style.min.css">
+
+      <style>
+
+* {
+	box-sizing: border-box;
+	margin: 0;
+	padding: 0;
+  }
+  
+  body {
+	  display: flex;
+	  justify-content: center;
+	  align-items: center;
+	  height: 100vh;
+	  background: transparent;
+	  user-select: none;
+	  background-position: center;
+	  background-size: cover
+  }
+  
+  ul li {
+	  list-style: none
+  }
+  
+  .root {
+	  width: 999px;
+	  height: 70%;
+	  color: rgb(255, 255, 255);
+	  font-weight: normal
+  }
+  
+  .root .Middle506Top {
+	  display: flex;
+	  justify-content: space-between;
+	  align-items: flex-end
+  }
+  
+  .root .Middle506Top h1,
+  .root .Middle506Top span {
+	  font-size: 20px;
+	  text-shadow: 0 0 3px #000
+  }
+  
+  .root ul {
+	  display: flex
+  }
+  
+  .root ul li:first-of-type {
+	  width: calc(40%)
+  }
+  
+  
+  .root ul li:not(:first-of-type) {
+	  width: calc(60% / 5)
+  }
+  
+  .root ul.titles {
+	  background-color: #00ff405e;
+	  margin: 15px 0 10px;
+	  border-radius: 25px;
+	  box-shadow: 0 1px 3px rgba(0, 0, 0, 0.21), 0 1px 2px rgba(0, 0, 0, 0.34);
+	  padding: 10px ;
+	  text-transform: uppercase;
+	  text-align: center
+  }
+  
+  .root ul.player li:first-of-type {
+	  display: flex;
+	  align-items: center
+  }
+  
+  .root ul.player li:first-of-type .num {
+	  display: block;
+	  border-radius: 15px 0px 0px 15px;
+	  width: 55px;
+	  padding: 8px 9px;
+	  text-align: center;
+	  border-left: 2px solid #00ff405e;
+	  border-right: 2px solid #00ff405e;
+	  white-space: pre-line;
+	  line-height: 17px;
+	  background-color: #18191D
+  }
+  
+  .root ul.player li:first-of-type>div {
+	  display: flex;
+	  border-radius: 0px 0px 0px 0px;
+	  justify-content: space-between;
+	  border-left: 2px solid #00ff405e;
+	  border-right: 2px solid #00ff405e;
+	  align-items: center;
+	  text-align: center;
+	  font-size: 15.5px;
+	  padding: 8px 9px;
+	  margin: 0 2px;
+	  background-color: rgba(30, 33, 36, 0.9);
+	  width: calc(100% - 58px)
+  }
+  
+  .root ul.player li:first-of-type>div .name {
+	  display: block;
+	  line-height: 17px;
+	  width: calc(100% - 22px);
+	  white-space: nowrap;
+	  overflow: hidden;
+	  text-overflow: ellipsis
+  }
+  
+  
+  
+  .root ul.player li:first-of-type>div .status {
+	  display: block;
+	  width: 12px;
+	  height: 12px;
+	  border-radius: 20%
+  }
+  
+  .root ul.player li:first-of-type>div .status.no-afk {
+	  background-color: #22d180;
+	  border-radius: 25px;
+  }
+  
+  .root ul.player li:first-of-type>div .status.yes-afk {
+	  background-color: #838383;
+	  border-radius: 25px;
+  }
+  .root ul.player li:first-of-type > div .name.scripter {
+	color: rgba(175, 39, 255);
+  }
+  
+  .root ul.player li:first-of-type > div .name.Founder {
+	color: rgba(216, 0, 40);
+  }
+  
+  .root ul.player li:first-of-type > div .name.d_founder {
+	color: rgba(216, 0, 40);
+  }
+  
+  .root ul.player li:first-of-type > div .name.CEO {
+	color: rgba(255, 201, 86);
+  }
+  
+  .root ul.player li:first-of-type > div .name.highstaff {
+	color: rgba(137, 137, 239);
+  }
+  
+  .root ul.player li:first-of-type > div .name.admin {
+	color: rgba(164, 212, 36);
+  }
+  
+  .root ul.player li:first-of-type > div .name.support {
+	color: rgba(104, 214, 184);
+  }
+  
+  .root ul.player li:first-of-type > div .name.prime {
+	color: rgba(74, 177, 184);
+  }
+  
+  
+  .root ul.player li:first-of-type > div .name.nitro {
+	color: rgba(255, 155, 255);
+  }
+  
+  .root ul.player li:first-of-type > div .name.youtuber {
+	color: rgba(255, 155, 129);
+  }
+  
+  .root ul.player li:first-of-type > div .name.guest {
+	color: #59586c;
+  }
+  
+  .root ul.player li:first-of-type > div .afk {
+	color: #f4bebe;
+  }
+  
+  .root ul.player li:nth-of-type(2), .root ul.player li:nth-of-type(3) {
+	direction: rtl;
+  }
+  
+  .root ul.player li.green {
+	color: #c6ecd9;
+  }
+  
+  .root ul.player li.orange {
+	color: #ffd699;
+  }
+  
+  .root ul.player li.red {
+	color: #f4bebe;
+  }
+  
+  
+  .root ul.player li:not(:first-of-type) {
+	  display: block;
+	  font-size: 14px;
+	  line-height: 17px;
+	  padding: 8px ;
+	  border-radius: 0px 0px 0px 0px;
+	  background-color: rgba(24, 25, 29, 0.9);
+	  border-left: 2px solid #00ff405e;
+	  border-right: 2px solid #00ff405e;
+	  text-align: center;
+	  white-space: nowrap;
+  }
+  
+  .root ul.player li:not(:first-of-type).rank {
+	  white-space: nowrap;
+  }
+  
+  .root .players {
+	  height: calc(100% - 45px - 36px - 25px);
+	  font-size: 14.5px;
+	  overflow-x: hidden;
+	  overflow-y: auto
+  }
+  
+  .root .players ul:not(:last-of-type) {
+	  margin-bottom: 3px;
+  }
+  
+  .root .players::-webkit-scrollbar {
+	  width: 3px;
+  }
+  
+  .root .players::-webkit-scrollbar-track {
+	  border-radius: 35px;
+	  background: #4e4e4e
+  }
+  
+  .root .players::-webkit-scrollbar-thumb {
+	  border-radius: 35px;
+	  background: #00ff405e;
+  }
+
+      </style>
+   </head>
+   <body>
+      <div class="root">
+         <div class="Middle506Top">
+            <h1>Arab Night Network || En[K]sAr</h1>
+            <span>0/100</span>
+         </div>
+         <ul class="titles">
+            <li>Name</li>
+            <li>Rank</li>
+            <li>Hours</li>
+            <li>Level</li>
+            <li>FPS</li>
+            <li>Ping</li>
+         </ul>
+         <div class="players">
+            <ul class="player">
+               <li>
+                  <span class="num">1</span>
+                  <div>
+                     <span class="name">En[K]sAr .</span>
+                     <span class="status no-afk"></span>
+                  </div>
+               </li>
+               <li> <span class="rank">Founder</span> </li>
+               <li>512</li>
+               <li class="orange">100</li>
+               <li class="orange">100</li>
+               <li class="green">100ms</li>
+            </ul>
+            <ul class="player">
+               <li>
+                  <span class="num">2</span>
+                  <div>
+                     <span class="name">En[K]sAr .</span>
+                     <span class="status no-afk"></span>
+                  </div>
+               </li>
+               <li> <span class="rank">Founder</span> </li>
+               <li>965</li>
+               <li class="orange">100</li>
+               <li class="orange">100</li>
+               <li class="green">100ms</li>
+            </ul>
+         </div>
+      </div>
+
+<script src="script.js"></script>
+</body>
+</html>

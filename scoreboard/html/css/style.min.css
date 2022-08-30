@@ -1,0 +1,32 @@
+@font-face {
+	font-family: 'Tajawal';
+	  font-style: normal;
+	font-weight: 100;
+	src: url("../font/Regular.ttf") format("truetype");
+  }
+  
+  @font-face {
+	font-family: 'Tajawal';
+	  font-style: normal;
+	font-weight: 100;
+	src: url("../font/Medium.ttf") format("truetype");
+  }
+  
+  @font-face {
+	font-family: 'Tajawal';
+	  font-style: normal;
+	font-weight: 100;
+	src: url("../font/Bold.ttf") format("truetype");
+  }
+
+  * {
+	font-family: 'Tajawal', 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  }
+  
+  @media (max-width: 992px) {
+	  .root {
+		  width: 100%;
+		  padding: 0 15px
+	  }
+  }
+  
